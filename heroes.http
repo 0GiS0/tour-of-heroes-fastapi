@@ -1,0 +1,28 @@
+### Get all heroes
+GET http://localhost:8000/heroes
+
+### Create a new hero
+POST http://localhost:8000/heroes
+Content-Type: application/json
+
+{
+  "name": "Batman",
+  "power": "Intelligence",
+  "secret_identity": "Bruce Wayne"
+}
+
+### Create another hero
+POST http://localhost:8000/heroes
+Content-Type: application/json
+
+{
+  "name": "Wonder Woman",
+  "power": "Super strength",
+  "secret_identity": "Diana Prince"
+}
+
+### Get a specific hero by id
+GET http://localhost:8000/heroes/1
+
+### Get another specific hero by id
+GET http://localhost:8000/heroes/2
